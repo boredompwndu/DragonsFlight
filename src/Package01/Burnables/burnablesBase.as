@@ -5,22 +5,23 @@ package Package01.Burnables {
 	 */
 	public class burnablesBase 
 	{
-		var isBurnt : Boolean = false;
-		var centerPosX : int = null;
+		var isBurnt : Boolean = false;//burnt
+		var pointsValue : int = 0;
+		var burnableName : String = null; //not a filename. used for filenames later though
+		
+		var centerPosX : int = null; //centerpoints
 		var centerPosY : int = null;
-		var stretchX : Number = 1;
-		var stretchY : Number = 1;
-		var stretchF : Number = 0.75; //Constant to control severity of burnables stretching
 		
+		var lengthX: int = 0;
+		var lengthY: int = 0;
 		
-		public function burnablesBase(startPos:int,burnableName:String,stretchX:Boolean,stretchY:false) //Constructor for burnables
+		public function burnablesBase(startPos:int,burnableName:String) //Constructor for burnables
 		{
-			if (stretchX) {					//Stretch X if stretching is allowed
-				this.stretchX = (Math.random() + 0.5) * stretchF;
-			}
-			if (stretchY) {					//Stretch Y if Stretching is allowed
-				this.stretchY = (Math.random() + 0.5) * stretchF;
-			}
+			
+		}
+		
+		public function burnBurnable() {
+			
 		}
 		
 	}
